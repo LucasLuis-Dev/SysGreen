@@ -16,12 +16,11 @@ main {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #FFF;
     width: 100%;
-    padding-left: 10rem;
-    padding-right: 10rem;
+   
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -30,18 +29,37 @@ nav {
 
 nav img {
     width: 170px;
-    margin-right: 30rem;
+   
 }
 
 .logo {
     width:100px;
 }
 
-nav a {
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(89, 235, 89);
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    list-style: none;
+
+}
+
+nav .nav-list a {
     text-decoration: none;
     color: #000;
     font-weight: 700;
-    
 }
 
 
@@ -50,9 +68,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-   
-
     gap: 65px;
 
     background-color: rgb(89, 235, 89);
@@ -156,4 +171,192 @@ footer div {
 
 footer div img {
     width: 48px;
+}
+
+@media (min-width:300px) and (max-width: 450px){
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    
+    nav img {
+        width: 100px;
+        margin-right: 2rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+    nav .nav-list {
+        position: absolute;
+        background-color: #FFF;
+        top:7vh;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: safe;
+        align-items: center;
+
+        padding-top: 8rem;
+
+        list-style: none;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    nav .nav-list.active {
+        transform: translateX(0);
+    }
+
+    nav .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    
+    nav .nav-list a {
+        text-decoration: none;
+        color: rgb(89, 235, 89);
+        font-weight: 700;
+    }
+
+
+    @keyframes navLinkFade {
+        from {
+        opacity: 0;
+        transform: translateX(50px);
+        }
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+        
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    
+    
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 37%;
+        padding-bottom: 35%;
+    
+    }
+    
+    header img {
+        width: 200px;
+    }
+
+    
+    header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    header p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .descricao {
+
+        flex-direction: column;
+        gap: 40px;
+    
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    
+    }
+    
+    .descricao h1 {
+        font-size: 28px;
+    }
+    
+    .descricao .informacoes {
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .descricao .informacoes img {
+        width: 250px;
+    }
+    
+    .descricao .informacoes p {
+        font-size: 17px;
+        font-weight: 500;
+        width: 115%;
+        text-align: center;
+    }
+
+    footer {
+    
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 50px;
+    
+        font-weight: 700;
+    }
+
+    footer p {
+        font-size:7px;
+    }
+
+    .direitos {
+        width: 20%;
+    }
+
+    .logo {
+        width: 60px;
+    }
+    
+    
+    footer div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 17%;
+        gap: 2px;
+        
+    }
+    
+    footer div img {
+        width: 25px;
+    }
+   
+    
+    
 }
