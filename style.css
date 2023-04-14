@@ -436,6 +436,14 @@ footer div img {
         text-align: center;
     }
 
+    .descricao .informacoes div {
+        width: 100%;
+    }
+    
+    .descricao .informacoes div p {
+        width: 115%;
+    }
+
     .descricao .informacoes ul {
         flex-wrap: wrap;
         gap: 10px;
