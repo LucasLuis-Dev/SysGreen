@@ -89,7 +89,6 @@ header {
     gap: 65px;
 
     background-color: rgb(89, 235, 89);
-    
 
     padding-left: 10%;
     padding-right: 10%;
@@ -112,7 +111,7 @@ header div {
 }
 
 header h1 {
-    font-size: 38px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 65px;
     text-align: center;
@@ -129,12 +128,12 @@ header a {
     margin-top: 25px;
     text-decoration: none;
     background-color: #FFF;
-    padding: 18px;
+    padding: 20px;
     padding-right: 35px;
     padding-left: 35px;
     border-radius: 20px;
 
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     color: black;
 
@@ -172,7 +171,7 @@ header a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 102px;
+    gap: 152px;
 }
 
 .descricao .informacoes img {
@@ -182,15 +181,19 @@ header a:hover {
 .descricao .informacoes p {
     font-size: 17px;
     font-weight: 500;
-    width: 100%;
+    width: 45%;
 }
 
 .descricao .informacoes div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
     gap: 30px;
+}
+
+.descricao .informacoes div p {
+    width: 90%;
 }
 
 .descricao .informacoes div a {
@@ -200,12 +203,12 @@ header a:hover {
     margin-top: 25px;
     text-decoration: none;
     background-color: rgb(89, 235, 89);
-    padding: 18px;
+    padding: 20px;
     padding-right: 35px;
     padding-left: 35px;
     border-radius: 20px;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: black;
 
