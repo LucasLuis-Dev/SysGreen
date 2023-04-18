@@ -224,6 +224,15 @@ header a:hover {
     width: 25px;
 }
 
+.descricao .informacoes .contato {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+
+    width: 90%;
+}
+
 
 .descricao .informacoes ul {
     display: flex;
@@ -441,6 +450,12 @@ footer div img {
     
     .descricao .informacoes div p {
         width: 115%;
+    }
+
+    .descricao .informacoes .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .descricao .informacoes ul {
