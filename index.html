@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SysGreen</title>
     <link rel="shortcut icon" href="./assets/logo-fundo-branco.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,15 +15,17 @@
 <body>
     <main>
         <nav id="navbar">
-            <a href="#sysgreen"><img  src="./assets/logo-deitado.png" alt=""></a>
+            <a class="navbar-logo__container" href="#sysgreen">
+                <img  src="./assets/logo-deitado.png" alt="">
+            </a>
 
-            <div class="mobile-menu">
+            <div class="mobile-menu__container">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
 
-            <ul class="nav-list">
+            <ul class="nav-list__container">
                 <li><a href="#quemSomos">Quem Somos</a></li>
                 <li><a href="#nossosServiços">Serviços</a></li>
                 <li><a href="#nossoApp">Nosso App</a></li>
@@ -32,11 +35,11 @@
 
         </nav>
         <header id="sysgreen">
-            <img src="./assets/undraw_welcoming_re_x0qo.svg" alt="">
+            
 
             <div>
                 <h1>
-                    Junte-se a nós na luta pela sustentabilidade! Recicle seus equipamentos eletrônicos conosco e ajude a preservar o planeta.
+                    Juntos pela sustentabilidade: Recicle seus eletrônicos
                 </h1>
                 <p>
                     Acreditamos em um futuro sustentável e estamos comprometidos em fazer a nossa parte.
@@ -44,6 +47,11 @@
 
                 <a href="#nossoApp">Conheça nosso App</a>
             </div>
+
+            <figure class="header-image__container">
+                <img src="./assets/High five-pana.svg" alt="">
+            
+            </figure>
             
            
         </header>
@@ -173,8 +181,8 @@
         </footer>
     </main>
 
-    <script src="./navbar-animation.js"></script>
-    <script src="./mobile-menu.js"></script>
+    <script src="./js/navbar-animation.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>
