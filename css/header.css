@@ -1,0 +1,40 @@
+.header__container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5% 10%;
+    justify-content: center;
+}
+
+.header-informations__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.header-informations__container > h1 > span {
+    color: var(--highlight-color);
+    font-weight: bold
+}
+
+.header-informations__container > h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.header-informations__container > p {
+    font-size: 1.3rem;
+}
+
+.header-informations-button {
+    background-color: var(--highlight-color);
+    width: 50%;
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
