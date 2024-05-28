@@ -55,8 +55,8 @@
     text-decoration: none;
     font-size: 2rem;
     color: rgb(89, 235, 89);
-    font-weight: 700;
-    transition: 100ms;
+    font-weight: 500;
+    transition: 200ms;
 }
 
 @keyframes navLinkFade {
@@ -80,4 +80,45 @@
 
 .mobile-menu__container.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+    .navbar-logo__container > img {
+        width: 35%;
+    }
+
+    .mobile-menu__container {
+        display: none;
+    }
+
+    .nav-list__container {
+        position: relative;
+        display: flex;
+        top: 0;
+        right: 0;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        gap: 4rem;
+        transform: translateX(0);
+        transition: transform 0.2s ease-in;
+    }
+
+    .nav-list__container > li {
+        opacity: 1;
+    }
+
+    .nav-list__container > li > a {
+        color: #000;
+        font-size: 1.8rem;
+    }
+
+    .nav-list__container > li > a:hover {
+        color: var(--highlight-color);
+        transform: translateY(2rem);
+    }
+
 }

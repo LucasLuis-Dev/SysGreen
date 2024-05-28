@@ -83,111 +83,8 @@ nav .nav-list a {
 }
     
 
-header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
 
 
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-
-}
-
-header img {
-    width: 200px;
-}
-
-
-header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 35px;
-    text-align: center;
-}
-
-header p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: center;
-}
-
-header a {
-    margin-top: 5px;
-    
-    padding: 15px;
-    padding-right: 25px;
-    padding-left: 25px;
-    
-}
-
-
-.descricao {
-
-    flex-direction: column;
-    gap: 40px;
-
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-
-}
-
-.descricao h1 {
-    font-size: 28px;
-    width: 120%;
-    text-align: center;
-}
-
-.descricao .informacoes {
-    flex-direction: column;
-    gap: 60px;
-}
-
-.descricao .informacoes img {
-    width: 250px;
-}
-
-.descricao .informacoes p {
-    font-size: 17px;
-    font-weight: 500;
-    width: 115%;
-    text-align: center;
-}
-
-.descricao .informacoes div {
-    width: 100%;
-}
-
-.descricao .informacoes div p {
-    width: 115%;
-}
-
-.descricao .informacoes .contato {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.descricao .informacoes ul {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.descricao .informacoes ul li img {
-    width: 60px;
-}
-
-.descricao .informacoes ul li:last-child img {
-    width: 60px;
-    height: 93%;
-}
 
 footer {
 
@@ -224,7 +121,7 @@ footer div img {
     width: 25px;
 }
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1200px) {
     nav {
         display: flex;
         flex-direction: row;
