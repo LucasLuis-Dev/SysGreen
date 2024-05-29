@@ -63,6 +63,7 @@
     font-size: 1.6rem;
     animation: pulse 1.3s infinite ease-out;
     padding: 1.5rem 5rem;
+    border: none;
 }
 
 .section-description__container-button > svg {
@@ -80,4 +81,20 @@
     100% {
         box-shadow: 0 0 0 50px rgba(88, 120, 243, 0);
     }
-  }
+}
+
+.section-description__container-contacts {
+    display: flex;
+    gap: 2rem;
+}
+
+.section-description__container-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.section-description__container-list-item > img{
+    width: 10rem;
+    border-radius: 2rem;
+}

@@ -86,40 +86,6 @@ nav .nav-list a {
 
 
 
-footer {
-
-    padding-left: 20px;
-    padding-right: 30px;
-    margin-top: 50px;
-
-    font-weight: 700;
-}
-
-footer p {
-    font-size:7px;
-}
-
-.direitos {
-    width: 20%;
-}
-
-.logo {
-    width: 60px;
-}
-
-footer div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 17%;
-    gap: 2px;
-    
-}
-
-footer div img {
-    width: 25px;
-}
 
 @media screen and (min-width:1200px) {
     nav {
