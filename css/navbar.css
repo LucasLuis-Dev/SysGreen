@@ -85,6 +85,9 @@
 
 @media screen and (min-width: 1200px) {
 
+    .navbar__container {
+        align-items: center;
+    }
 
     .navbar-logo__container > img {
         width: 22%;
@@ -99,6 +102,8 @@
         display: flex;
         top: 0;
         right: 0;
+        align-items: center;
+        justify-content: center;
         width: fit-content;
         height: fit-content;
         flex-direction: row;
