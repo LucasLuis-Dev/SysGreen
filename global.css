@@ -10,6 +10,16 @@
     --highlight-color: rgb(76, 197, 76)
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Poppins', sans-serif; 
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        font-size: 16px;
+    }
 }

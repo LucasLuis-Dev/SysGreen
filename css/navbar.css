@@ -90,7 +90,7 @@
     }
 
     .navbar-logo__container > img {
-        width: 22%;
+        width: 24%;
     }
 
     .mobile-menu__container {
@@ -118,7 +118,9 @@
 
     .nav-list__container > li > a {
         color: #000;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        width: max-content;
+        display: flex;
     }
 
     .nav-list__container > li > a:hover {
@@ -126,4 +128,16 @@
         transform: translateY(2rem);
     }
 
+}
+
+@media screen and (min-width: 1600px) {
+
+    
+    .navbar-logo__container > img {
+        width: 22%;
+    }
+    .nav-list__container > li > a {
+        color: #000;
+        font-size: 1.8rem;
+    }
 }
