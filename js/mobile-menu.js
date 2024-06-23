@@ -50,6 +50,8 @@ class MobileNavbar {
     ".nav-list__container",
     ".nav-list__container li",
   );
+
+
   mobileNavbar.init();
   
 
